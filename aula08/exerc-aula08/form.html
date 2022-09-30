@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=fo, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="form.css" media="screen" />
+</head>
+<body>
+
+    <h2>Média do aluno</h2>
+    <form action="CalcMedia.php" method="post" name="fmr" enctype="multipart/form-data" >
+
+        <div class="form">
+        <label for="nome">Coloque seu nome: </label>
+        <input type="text"name="nome" id="nome" required>
+    </div>
+    </div>
+
+    <div class="form">
+        <label for="nota1">Primeira nota: </label>
+        <input type="text" name="nota1" id="nota1" required>
+    </div>
+
+    <div class="form">
+        <label for="nota2">Segunda nota: </label>
+        <input type="text" name="nota2" id="nota2" required>
+    </div>
+
+    <div class="form">
+        <input type="submit" value="Calcular Média!">
+      </div>
+
+    </form>
+</body>
+</html>
