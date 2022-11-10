@@ -4,8 +4,8 @@ if( isset($_GET['perimetro']) ){
   $perimetro = $_GET['perimetro'];
 
   $diametro = getDiametro($perimetro);
-  $raio     = getRaio($diametro);
-  $area     = getArea($raio);
+  $r    = getRaio($diametro);
+  $area     = getArea($r);
 }
 
 
@@ -36,7 +36,7 @@ function getArea($r){
 
       <input type="submit" value="Calcular">
 
-      <?php echo "Diametro:{$diametro} &nbsp; &nbsp; &nbsp; Raio:{$raio} &nbsp; &nbsp; &nbsp; Area:{$area} "; 
+      <?php echo "Diametro:{$diametro} &nbsp; &nbsp; &nbsp; Raio:{$r} &nbsp; &nbsp; &nbsp; Area:{$area} "; 
       ?>
     </form>
 

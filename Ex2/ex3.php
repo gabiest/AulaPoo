@@ -16,7 +16,7 @@ if( isset($_GET['btn_calcular']) ){
 }
 
 function getDelta ( $a,$b,$c ) {
-  $del = pow ($b, 2) - 4 * $a * $c;
+  $del = (pow ($b, 2) - 4 )* $a * $c;
   return $del;
 }
 
