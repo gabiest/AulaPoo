@@ -23,7 +23,7 @@ class MediaG implements ImediaG {
 }
 
 
-public function setDados($nota,$nota2,$aluno){
+public function setDados($nota1,$nota2,$aluno){
 
     $this->aluno = $aluno;
     $this->nota1 = $nota1;

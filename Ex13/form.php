@@ -43,22 +43,21 @@ require_once ('MediaA.php');
 require_once ('MediaG.php');
 
 
-error_reporting(1);
 
 if(isset($_POST['btncalc'])){
   $aluno = $_POST['aluno'];
   $nota1   = $_POST['nota1'];
-  $altura = $_POST['nota2'];
+  $nota2 = $_POST['nota2'];
 
-  $CalcMedG = new MediaG();
-  $mg     = $CalcMedG->setDados($aluno,$nota1, $nota2);
-  $mediaG  = $CalcMedG->CalculaMediaG();
-  echo " {$mg}";
+  $CalcMedG = new MediaG;
+  $mg->setDados($aluno,$nota1, $nota2);
+  $mediaG->CalculaMediaG();
+
   echo "A media G é: {$mediaG}";
 
 
 
-    $CalcMedA = new MediaA();
+    $CalcMedA = new MediaA;
     $maa    = $CalcMedA->setDados($aluno,$nota1, $nota2);
     $mediaA  = $CalcMedA->CalculaMediaA();
     echo "A media A é: {$mediaA}";
