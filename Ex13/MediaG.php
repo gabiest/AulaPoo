@@ -28,9 +28,7 @@ public function setDados($nota,$nota2,$aluno){
     $this->aluno = $aluno;
     $this->nota1 = $nota1;
     $this->nota2 = $nota2;
-      
 }
-
 }
 
 

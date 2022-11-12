@@ -1,34 +1,4 @@
-<?php
 
-require_once ('MediaA.php');
-require_once ('MediaG.php');
-
-
-error_reporting(1);
-
-if(isset($_POST['btncalc'])){
-  $aluno = $_POST['aluno'];
-  $nota1   = $_POST['nota1'];
-  $altura = $_POST['nota2'];
-
-  $CalcMedG = new MediaG();
-  $mg     = $CalcMedG->setDados($aluno,$nota1, $nota2);
-  $mediaG  = $CalcMedG->CalculaMediaG();
-  echo "A media G é: {$mediaG}";
-
-
-
-
-    $CalcMedA = new MediaA();
-    $maa    = $CalcMedA->setDados($aluno,$nota1, $nota2);
-    $mediaA  = $CalcMedA->CalculaMediaA();
-    echo "A media A é: {$mediaA}";
-
-
-}
-
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -67,3 +37,34 @@ if(isset($_POST['btncalc'])){
     </form>
 </body>
 </html>
+<?php
+
+require_once ('MediaA.php');
+require_once ('MediaG.php');
+
+
+error_reporting(1);
+
+if(isset($_POST['btncalc'])){
+  $aluno = $_POST['aluno'];
+  $nota1   = $_POST['nota1'];
+  $altura = $_POST['nota2'];
+
+  $CalcMedG = new MediaG();
+  $mg     = $CalcMedG->setDados($aluno,$nota1, $nota2);
+  $mediaG  = $CalcMedG->CalculaMediaG();
+  echo " {$mg}";
+  echo "A media G é: {$mediaG}";
+
+
+
+    $CalcMedA = new MediaA();
+    $maa    = $CalcMedA->setDados($aluno,$nota1, $nota2);
+    $mediaA  = $CalcMedA->CalculaMediaA();
+    echo "A media A é: {$mediaA}";
+
+
+}
+
+
+?>

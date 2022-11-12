@@ -7,5 +7,4 @@ interface ImediaG extends Imedia {
 public function CalculaMediaG();
 
 
-
 }

@@ -7,6 +7,4 @@ interface ImediaA extends Imedia {
 
 public function CalculaMediaA();
 
-
-
 }
